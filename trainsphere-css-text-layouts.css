@@ -1,0 +1,146 @@
+/* TrainSphere — CSS Text Styles and Layouts (Standalone Reference Design) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 16px;
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    color: #1f2937;
+}
+
+.ts-stage-center {
+    position: relative;
+    width: 100%;
+    max-width: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Crest, Gear & Flame Watermark */
+.ts-crest-watermark {
+    position: absolute;
+    width: 610px;
+    max-width: 96%;
+    height: auto;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Light-gray Card matching the Reference Visual */
+.ts-layout-showcase-card {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    max-width: 560px;
+    background-color: rgba(246, 246, 246, 0.97);
+    border: 1px solid #e5e7eb;
+    padding: 24px 28px 30px;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+}
+
+.ts-brand-strip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.ts-brand-badge {
+    background-color: #1e3a8a;
+    color: #ffffff;
+    font-size: 0.74rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 3px;
+}
+
+.ts-brand-tagline {
+    font-size: 0.76rem;
+    font-weight: 600;
+    color: #4b5563;
+}
+
+.ts-primary-heading {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #1f2937;
+    margin-bottom: 16px;
+}
+
+.ts-divider-line {
+    border: 0;
+    border-top: 1px solid #d1d5db;
+    margin-bottom: 18px;
+}
+
+.ts-secondary-heading {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 8px;
+}
+
+.ts-intro-copy {
+    font-size: 0.94rem;
+    line-height: 1.5;
+    color: #374151;
+    margin-bottom: 18px;
+}
+
+.ts-dual-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.ts-column-box {
+    border: 1px solid #d1d5db;
+    border-radius: 3px;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.55);
+}
+
+.ts-column-box h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 10px;
+}
+
+/* Italicized Sidebar text style */
+.ts-italic-sidebar-text {
+    font-style: italic;
+    font-size: 0.88rem;
+    line-height: 1.52;
+    color: #374151;
+}
+
+/* Uppercase letter-spaced Main Content text style */
+.ts-uppercase-main-text {
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 0.84rem;
+    line-height: 1.55;
+    color: #1f2937;
+}
+
+@media screen and (max-width: 540px) {
+    .ts-primary-heading {
+        font-size: 1.6rem;
+    }
+    .ts-dual-columns {
+        grid-template-columns: 1fr;
+    }
+}
